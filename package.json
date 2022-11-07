@@ -18,7 +18,8 @@
     "sqlite3": "^5.0.9"
   },
   "scripts": {
-    "start": "cds run"
+    "start": "cds run",
+    "ldd": "cds deploy --to sqlite:db/bookshop.db"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -58,7 +59,7 @@
       "db": {
         "kind": "sqlite",
         "credentials": {
-          "database": "db/my-bookshopbd.db"
+          "database": "db/bookshop.db"
         }
       },
       "xsuaa_api": {

@@ -1,10 +1,6 @@
 module.exports = (srv) => {
-	srv.on("CancelOrder", async (req) => {
-		console.log("req", req.data);
-
-		return {
-			name: null,
-			ID: null,
-		};
-	});
+	// srv.before("*", async (req) => {
+	// 	const locale = req.user.locale || 'en';
+	// 	await cds.run("SET app.locale="+locale);
+	// });
 };
